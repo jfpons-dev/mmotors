@@ -14,7 +14,7 @@ variable "vpc_cidr_block" {
 }
 
 variable "public_subnets" {
-  type        = map(object({
+  type = map(object({
     cidr = string
     az   = string
   }))
@@ -32,7 +32,7 @@ variable "private_subnets_app" {
 variable "private_subnets_db" {
   type = map(object({
     cidr = string
-    az   = string 
+    az   = string
   }))
   description = "The CIDR blocks for the private database subnets"
 }
