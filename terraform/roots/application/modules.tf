@@ -10,6 +10,10 @@ module "network" {
 }
 
 module "security" {
-  source              = "../../modules/security"
-  vpc_id              = module.network.vpc_id
+  source = "../../modules/security"
+  vpc_id = module.network.vpc_id
+}
+
+module "registry" {
+  source = "../../modules/registry"
 }
