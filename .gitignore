@@ -43,5 +43,13 @@ terraform.rc
 # Uncomment the line below if you want to ignore planout files.
 # planout
 
-# Ignore macOS system files
+# local files
 .DS_Store
+.env
+
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
