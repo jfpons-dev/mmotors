@@ -1,8 +1,8 @@
 resource "aws_vpc_security_group_ingress_rule" "ingress_rule_443_alb_https" {
   security_group_id = aws_security_group.alb.id
   description       = "Allow public HTTPS traffic to the ALB"
-  from_port         = 443
-  to_port           = 443
+  from_port         = 80
+  to_port           = 80
   ip_protocol       = "tcp"
   cidr_ipv4         = "0.0.0.0/0"
 }
